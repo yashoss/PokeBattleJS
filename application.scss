@@ -411,6 +411,8 @@ span.my-hp-bar {
     position: absolute;
     top: 20px;
     left: 90px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .opp-hp-bar-container {
@@ -422,4 +424,5 @@ span.my-hp-bar {
     position: absolute;
     top: 20px;
     left: 90px;
+    justify-content: flex-start;
 }
