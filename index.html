@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <title>pb</title>
+    <link rel="stylesheet" href="application.scss">
+    <style type="text/css">
+      canvas{border: #666 1px solid;}
+    </style>
+    <script type="application/javascript" language="javascript">
+    </script>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+  </head>
+  <body>
+    <div class="everything">
+        <audio src="./lib/music/theme.mp3" autoplay id="theme"></audio>
+        <audio src="./lib/music/battle.mp3" id="battle"></audio>
+        <audio src="./lib/music/pokeball.mp3" id="pokeball"></audio>
+        <audio src="./lib/music/attack.wav" id="attack-sound"></audio>
+        <audio src="./lib/music/victory.mp3" id="victory-sound"></audio>
+        <audio src="./lib/music/defeat.mp3" id="defeat-sound"></audio>
+
+      <button id="start-button">start</button>
+      <div class="select-pokemon">
+        <button id="select-bulbasaur" class="select">bulbasaur</button>
+        <button id="select-charmander" class="select">charmander</button>
+        <button id="select-squirtle" class="select">squirtle</button>
+      </div>
+
+      <div class="attacks">
+        <button id="scratch" class="charmander-attack">Scratch</button>
+        <button id="ember" class="charmander-attack">Ember</button>
+        <button id="firefang" class="charmander-attack">Fire Fang</button>
+        <button id="inferno" class="charmander-attack">Inferno</button>
+
+        <button id="tackle" class="bulbasaur-attack">Tackle</button>
+        <button id="vinewhip" class="bulbasaur-attack">Vine Whip</button>
+        <button id="takedown" class="bulbasaur-attack">Take Down</button>
+        <button id="razorleaf" class="bulbasaur-attack">Razor Leaf</button>
+
+        <button id="tackle" class="squirtle-attack">Tackle</button>
+        <button id="watergun" class="squirtle-attack">Water Gun</button>
+        <button id="bite" class="squirtle-attack">Bite</button>
+        <button id="waterpulse" class="squirtle-attack">Water Pulse</button>
+        <img src="./lib/pics/bulbasaurfront.gif" class="bulbasaur-front" />
+        <img src="./lib/pics/bulbasaurback.gif" class="bulbasaur-back" />
+        <img src="./lib/pics/charmanderfront.gif" class="charmander-front" />
+        <img src="./lib/pics/charmanderback.gif" class="charmander-back" />
+        <img src="./lib/pics/squirtlefront.gif" class="squirtle-front" />
+        <img src="./lib/pics/squirtleback.gif" class="squirtle-back" />
+        <img src="./lib/pics/firespin.png" class="fire" id="fire-me" />
+        <img src="./lib/pics/firespin.png" class="fire" id="fire-you" />
+        <img src="./lib/pics/leaves.png" class="leaves" id="leaves-me" />
+        <img src="./lib/pics/leaves.png" class="leaves" id="leaves-you" />
+        <img src="./lib/pics/tackle.png" class="tackle" id="tackle-me" />
+        <img src="./lib/pics/tackle.png" class="tackle" id="tackle-you" />
+        <img src="./lib/pics/bite.png" class="bite" id="bite-me" />
+        <img src="./lib/pics/bite.png" class="bite" id="bite-you" />
+        <img src="./lib/pics/bite.png" class="bite" id="bite-me2" />
+        <img src="./lib/pics/bite.png" class="bite" id="bite-you2" />
+        <img src="./lib/pics/surf.gif" class="water" id="water-me" />
+        <img src="./lib/pics/surf.gif" class="water" id="water-you" />
+        <img src="./lib/pics/scratch.png" class="scratch" id="scratch-me" />
+        <img src="./lib/pics/scratch.png" class="scratch" id="scratch-you" />
+        <div class="healthbar" id="opp-hp">
+          <h4>Foe's HP: </h4><div class="opp-hp-bar-container"><span class="opp-hp-bar"></span></div>
+        </div>
+        <div class="healthbar" id="my-hp">
+          <h4>Your HP: </h4><div class="my-hp-bar-container"><span class="my-hp-bar"></span></div>
+        </div>
+      </div>
+
+        <canvas id="canvas" width="800" height="600"></canvas>
+    </div>
+
+
+
+    <script type="application/javascript" src="vendor/keymaster.js"></script>
+    <script type="application/javascript" src="lib/bundle.js"></script>
+  </body>
+</html>

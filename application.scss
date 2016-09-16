@@ -1,0 +1,425 @@
+button#start-button {
+    position: absolute;
+    background-color: transparent;
+    color: red;
+    padding-top: 530px;
+    width: 800;
+    border: none;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 50px;
+    z-index: 99;
+}
+
+button#start-button:hover {
+    color: green;
+    font-size: 65px;
+}
+
+button.charmander-attack {
+  display: none;
+  z-index: 99;
+  width: 24%;
+  padding: 40px;
+  align-self: flex-end;
+  background-color: rgba(1000,0,0,.5);
+}
+
+button.charmander-attack:hover {
+  color: white;
+  background-color: rgba(1000,0,0,1);
+  cursor: pointer;
+}
+
+button.bulbasaur-attack {
+  display: none;
+  z-index: 99;
+  width: 24%;
+  padding: 40px;
+  align-self: flex-end;
+  background-color: rgba(0,1000,100,.5);
+}
+
+button.bulbasaur-attack:hover {
+  color: white;
+  background-color: rgba(0,1000,100,1);
+  cursor: pointer;
+}
+
+button.squirtle-attack {
+  display: none;
+  z-index: 99;
+  width: 24%;
+  padding: 40px;
+  align-self: flex-end;
+  background-color: rgba(0,100,1000,.5);
+}
+
+button.squirtle-attack:hover{
+  color: white;
+  background-color: rgba(0,100,1000,1);
+  cursor: pointer;
+}
+
+button#select-bulbasaur {background: transparent;height: 200;margin-top: 50;width: 150;color: transparent;border: none; z-index: 99; cursor: pointer;}
+
+button#select-charmander {background: transparent;height: 200;margin-top: 50;width: 150;margin-left: -60px;color: transparent;border: none; z-index: 99; cursor: pointer;}
+
+button#select-squirtle {
+    background: transparent;
+    height: 200;
+    margin-top: 50;
+    width: 150;
+    margin-left: -60px;
+    color: transparent;
+    border: none;
+    z-index: 99;
+    cursor: pointer;
+}
+
+div {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 800;
+    margin: 0 auto;
+    height: 600;
+}
+
+.select-pokemon {
+    height: 600;
+    width: 800;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+button#select-bulbasaur:hover {
+  border-width: 5px;
+  border-style: solid;
+  -webkit-border-image:
+  -webkit-gradient(linear, 0 100%, 0 0, from(green), to(rgba(0, 0, 0, 0))) 1 100%;
+  -webkit-border-image:
+  -webkit-linear-gradient(bottom, green, rgba(0, 0, 0, 0)) 1 100%;
+  -moz-border-image:
+  -moz-linear-gradient(bottom, green, rgba(0, 0, 0, 0)) 1 100%;
+  -o-border-image:
+  -o-linear-gradient(bottom, green, rgba(0, 0, 0, 0)) 1 100%;
+  border-image:
+  linear-gradient(to top, green, rgba(0, 0, 0, 0)) 1 100%;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+40,ffffff+100&0+40,1+100 */
+background: -moz-linear-gradient(top,  rgba(255,255,255,0) 40%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 40%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,0) 40%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+}
+
+button#select-charmander:hover {
+  border-width: 5px;
+  border-style: solid;
+  -webkit-border-image:
+  -webkit-gradient(linear, 0 100%, 0 0, from(red), to(rgba(0, 0, 0, 0))) 1 100%;
+  -webkit-border-image:
+  -webkit-linear-gradient(bottom, red, rgba(0, 0, 0, 0)) 1 100%;
+  -moz-border-image:
+  -moz-linear-gradient(bottom, red, rgba(0, 0, 0, 0)) 1 100%;
+  -o-border-image:
+  -o-linear-gradient(bottom, red, rgba(0, 0, 0, 0)) 1 100%;
+  border-image:
+  linear-gradient(to top, red, rgba(0, 0, 0, 0)) 1 100%;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+40,ffffff+100&0+40,1+100 */
+background: -moz-linear-gradient(top,  rgba(255,255,255,0) 40%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 40%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,0) 40%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+}
+
+button#select-squirtle:hover {
+  border-width: 5px;
+  border-style: solid;
+  -webkit-border-image:
+    -webkit-gradient(linear, 0 100%, 0 0, from(blue), to(rgba(0, 0, 0, 0))) 1 100%;
+  -webkit-border-image:
+    -webkit-linear-gradient(bottom, blue, rgba(0, 0, 0, 0)) 1 100%;
+  -moz-border-image:
+    -moz-linear-gradient(bottom, blue, rgba(0, 0, 0, 0)) 1 100%;
+  -o-border-image:
+    -o-linear-gradient(bottom, blue, rgba(0, 0, 0, 0)) 1 100%;
+  border-image:
+    linear-gradient(to top, blue, rgba(0, 0, 0, 0)) 1 100%;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+40,ffffff+100&0+40,1+100 */
+background: -moz-linear-gradient(top,  rgba(255,255,255,0) 40%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 40%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,0) 40%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+}
+
+.attacks{
+  height: 600;
+  width: 800;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.bulbasaur-front{
+  display: none;
+  position: absolute;
+  width: 60px;
+  left: 541;
+  top: 150;
+}
+
+.bulbasaur-back{
+  display: none;
+  position: absolute;
+  width: 80px;
+  height: 110;
+  left: 159;
+  top: 360;
+}
+
+.charmander-front{
+  display: none;
+  position: absolute;
+  width: 60px;
+  left: 541;
+  top: 150;
+}
+
+.charmander-back{
+  display: none;
+  position: absolute;
+  width: 80px;
+  height: 110;
+  left: 159;
+  top: 360;
+}
+
+.squirtle-front{
+  display: none;
+  position: absolute;
+  width: 60px;
+  left: 541;
+  top: 150;
+}
+
+.squirtle-back{
+  display: none;
+  position: absolute;
+  width: 80px;
+  height: 110;
+  left: 159;
+  top: 360;
+}
+
+.fire {
+    position: absolute;
+}
+
+img#fire-me {
+    left: 140;
+    top: 420;
+    width: 120;
+    height: 0;
+}
+
+img#fire-you {
+    width: 100;
+    height: 0;
+    left: 520;
+    top: 190;
+}
+
+
+.leaves {
+    position: absolute;
+}
+
+img#leaves-me {
+    left: 140;
+    top: 410;
+    width: 120;
+    height: 0;
+}
+
+img#leaves-you {
+    width: 100;
+    height: 0;
+    left: 520;
+    top: 180;
+}
+
+.tackle {
+    position: absolute;
+}
+
+img#tackle-you {
+    width: 0;
+    left: 520;
+    top: 70;
+    clip: rect(85px, 100px, 200px, 0);
+}
+
+img#tackle-me {
+    left: 145;
+    top: 290;
+    width: 0;
+    clip: rect(100px, 100px, 200px, 0);
+}
+
+.bite {
+  position: absolute;
+}
+
+img#bite-you {
+    width: 300;
+    height: 150;
+    left: 510;
+    clip: rect(0px, 80px, 100px, 31px);
+    top: 140;
+    display: none;
+}
+
+img#bite-me {
+    left: 105;
+    top: 350;
+    width: 320;
+    height: 170;
+    clip: rect(0px, 120px, 82px, 75px);
+    display: none;
+}
+
+img#bite-you2 {
+    width: 300;
+    height: 150;
+    left: 510;
+    clip: rect(100px, 80px, 200px, 31px);
+    top: 70;
+    display: none;
+}
+
+img#bite-me2 {
+    left: 105;
+    top: 280;
+    width: 320;
+    height: 170;
+    clip: rect(100px, 120px, 182px, 75px);
+    display: none;
+}
+
+.water {
+    position: absolute;
+}
+
+img#water-you {
+    left: 525;
+    top: 165;
+    width: 100;
+    display: none;
+}
+
+img#water-me {
+    width: 100;
+    top: 410;
+    left: 150;
+    display: none;
+}
+
+.scratch {
+    position: absolute;
+}
+
+img#scratch-you {
+    left: 400;
+    top: 150;
+    width: 0;
+    clip: rect(0px, 180px, 102px, 120px);
+}
+
+img#scratch-me {
+    left: 70;
+    top: 380;
+    clip: rect(0px, 180px, 182px, 120px);
+    width: 0;
+}
+
+div#my-hp {
+    position: absolute;
+    background-color: blue;
+    height: 60px;
+    display: flex;
+    width: 0;
+    justify-content: flex-start;
+    padding-left: 20px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    top: 430px;
+    left: 480;
+    display: none;
+}
+
+div#opp-hp {
+    position: absolute;
+    background-color: blue;
+    height: 60px;
+    display: flex;
+    width: 0;
+    justify-content: flex-start;
+    padding-left: 20px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+
+span.opp-hp-bar {
+    background-color: red;
+    display: flex;
+    height: 20px;
+    width: 200px;
+    top: 20px;
+    left: 90px;
+}
+
+span.my-hp-bar {
+    background-color: red;
+    display: flex;
+    height: 20px;
+    width: 200px;
+    top: 20px;
+    left: 90px;
+}
+
+.my-hp-bar-container {
+    background-color: lightgrey;
+    height: 20px;
+    width: 200px;
+    border: 1px solid black;
+    position: absolute;
+    top: 20px;
+    left: 90px;
+}
+
+.opp-hp-bar-container {
+    background-color: lightgrey;
+    display: flex;
+    height: 20px;
+    width: 200px;
+    border: 1px solid black;
+    position: absolute;
+    top: 20px;
+    left: 90px;
+}
