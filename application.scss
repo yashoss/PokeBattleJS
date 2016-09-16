@@ -84,8 +84,6 @@ div {
     width: 800;
     margin: 0 auto;
     height: 600;
-    position: absolute;
-    margin-top: 100px;
 }
 
 .select-pokemon {
@@ -413,8 +411,6 @@ span.my-hp-bar {
     position: absolute;
     top: 20px;
     left: 90px;
-    display: flex;
-    justify-content: flex-start;
 }
 
 .opp-hp-bar-container {
@@ -426,5 +422,4 @@ span.my-hp-bar {
     position: absolute;
     top: 20px;
     left: 90px;
-    justify-content: flex-start;
 }
