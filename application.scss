@@ -498,3 +498,35 @@ h3.logo {
     margin-top: 546px;
     margin-left: 300px;
 }
+
+.replay{
+  position: absolute;
+  background-color: transparent;
+  color: black;
+  bottom: 0;
+  padding-top: 540px;
+  width: 800;
+  border: none;
+  display: none;
+  cursor: pointer;
+  font-weight: 1000;
+  font-size: 60px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  z-index: 9;
+  font-family: 'VT323', monospace;
+  -moz-animation: flash 1s ease-in-out;
+  -moz-animation-iteration-count: 1000;
+  -webkit-animation: flash 1s ease-in-out;
+  -webkit-animation-iteration-count: 1000;
+  -ms-animation: flash 1s ease-in-out;
+  -ms-animation-iteration-count: 1000;
+}
+
+.replay:hover{
+  color: yellow;
+  font-size: 65px;
+  border: none;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: blue;
+}
