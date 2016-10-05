@@ -2,6 +2,7 @@
   <head>
     <title>pb</title>
     <link rel="stylesheet" href="application.scss">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <style type="text/css">
       canvas{border: #666 1px solid;}
     </style>
@@ -9,16 +10,18 @@
     </script>
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
   </head>
-  <body>
+  <body background="./lib/pics/gameboy.png">
     <div class="everything">
-        <audio src="./lib/music/theme.mp3" autoplay id="theme"></audio>
-        <audio src="./lib/music/battle.mp3" id="battle"></audio>
-        <audio src="./lib/music/pokeball.mp3" id="pokeball"></audio>
-        <audio src="./lib/music/attack.wav" id="attack-sound"></audio>
-        <audio src="./lib/music/victory.mp3" id="victory-sound"></audio>
-        <audio src="./lib/music/defeat.mp3" id="defeat-sound"></audio>
+      <button id="mute" class="mute"></button>
+        <h3 class="logo">PokeBattleJS</h3>
+        <audio src="./lib/music/theme.mp3" autoplay id="theme" class="music"></audio>
+        <audio src="./lib/music/battle.mp3" id="battle" class="music"></audio>
+        <audio src="./lib/music/pokeball.mp3" id="pokeball" class="music"></audio>
+        <audio src="./lib/music/attack.wav" id="attack-sound" class="music"></audio>
+        <audio src="./lib/music/victory.mp3" id="victory-sound" class="music"></audio>
+        <audio src="./lib/music/defeat.mp3" id="defeat-sound" class="music"></audio>
 
-      <button id="start-button">start</button>
+      <button id="start-button">click to start</button>
       <div class="select-pokemon">
         <button id="select-bulbasaur" class="select">bulbasaur</button>
         <button id="select-charmander" class="select">charmander</button>
