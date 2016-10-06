@@ -53,9 +53,10 @@ button.charmander-attack {
   width: 24%;
   padding: 24px;
   align-self: flex-end;
-  font-size: 15;
+  font-size: 24;
   width: 195px;
   background-color: rgba(1000,0,0,.5);
+  font-family: 'VT323', monospace;
 }
 
 button.charmander-attack:hover {
@@ -70,9 +71,10 @@ button.bulbasaur-attack {
   width: 24%;
   padding: 24px;
   align-self: flex-end;
-  font-size: 15;
+  font-size: 24;
   width: 195px;
   background-color: rgba(0,1000,100,.5);
+  font-family: 'VT323', monospace;
 }
 
 button.bulbasaur-attack:hover {
@@ -87,9 +89,10 @@ button.squirtle-attack {
   width: 24%;
   padding: 24px;
   align-self: flex-end;
-  font-size: 15;
+  font-size: 24;
   width: 195px;
   background-color: rgba(0,100,1000,.5);
+  font-family: 'VT323', monospace;
 }
 
 button.squirtle-attack:hover{
