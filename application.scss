@@ -396,7 +396,7 @@ img#scratch-me {
 
 div#my-hp {
     position: absolute;
-    background-color: blue;
+    background-color: lightgreen;
     height: 60px;
     display: flex;
     width: 0;
@@ -411,7 +411,7 @@ div#my-hp {
 
 div#opp-hp {
     position: absolute;
-    background-color: blue;
+    background-color: lightcoral;
     height: 60px;
     display: flex;
     width: 0;
@@ -472,8 +472,20 @@ body {
 background-size: cover;
 background-position: center top;
 display: flex;
+flex-direction: column;
 align-items: center;
 font-family: 'VT323', monospace;
+}
+
+img.logo {
+    height: 45px;
+    margin-bottom: -4px;
+    margin-right: -12px;
+}
+
+h1.title{
+  font-family: 'Russo One', sans-serif;
+  font-size: 50px;
 }
 
 button#mute {
