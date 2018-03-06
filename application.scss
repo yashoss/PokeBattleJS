@@ -117,6 +117,18 @@ button#select-squirtle {
     cursor: pointer;
 }
 
+button#select-pikachu {
+    background: transparent;
+    height: 200;
+    margin-top: 50;
+    width: 150;
+    margin-left: -60px;
+    color: transparent;
+    border: none;
+    z-index: 99;
+    cursor: pointer;
+}
+
 div {
     text-align: center;
     display: flex;
